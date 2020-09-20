@@ -27,12 +27,12 @@ export default function SeriesList({
   if (seriesData && seriesData.totalResults) {
     maxpage = Math.ceil(seriesData.totalResults / 10);
   }
-  console.log(maxpage, "maxpage");
+  //   console.log(maxpage, "maxpage");
   const handleModal = (series) => {
     setshowSelected(!showSelected);
     setselectedSeries(series);
-    console.log(showSelected);
-    console.log(selectedSeries, "*****");
+    // console.log(showSelected);
+    // console.log(selectedSeries, "*****");
   };
   const handleNextPage = () => {
     if (page === maxpage) {
@@ -46,7 +46,7 @@ export default function SeriesList({
     }
     handleSearch(searchState.series, searchState.year, page - 1);
   };
-  console.log(page);
+  //   console.log(page);
   if (seriesData === undefined) {
     return (
       <Grid item className={classes.fontStyle}>

@@ -32,7 +32,7 @@ function wrapPromise(promise) {
 }
 
 function fetchSeries() {
-  console.log("fetching....");
+  // console.log("fetching....");
   const url =
     "https://www.omdbapi.com/?apikey=d1927cda&s=dark&&type=series&page=1&y=2014";
 

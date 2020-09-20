@@ -78,7 +78,7 @@ export default function SimpleModal(props) {
   const handleClose = () => {
     setshowSelected(false);
   };
-  console.log("selected series", selectedSeries);
+  // console.log("selected series", selectedSeries);
 
   return (
     <div>
@@ -98,13 +98,13 @@ export default function SimpleModal(props) {
 }
 
 const fetchSeriesById = (id) =>
-  fetch(`http://www.omdbapi.com/?apikey=d1927cda&i=${id}`).then((res) =>
+  fetch(`https://www.omdbapi.com/?apikey=d1927cda&i=${id}`).then((res) =>
     res.json()
   );
 function ModalBody({ seriesReader }) {
   const seriesData = seriesReader();
   const classes = useStyles();
-  console.log("IDDDDD", seriesData);
+  // console.log("IDDDDD", seriesData);
 
   return (
     <div>
