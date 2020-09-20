@@ -35,6 +35,7 @@ const useStyles = makeStyles({
   },
 });
 
+//Loading Card Item Screen for individual cards
 export default function LoadingCard(props) {
   //   console.log(props, "props");
   const { series } = props;

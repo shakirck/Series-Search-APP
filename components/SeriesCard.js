@@ -36,6 +36,7 @@ const useStyles = makeStyles({
   },
 });
 
+// Individual Card Component
 export default function SeriesCard(props) {
   //   console.log(props, "props");
   const { series, handleModal } = props;

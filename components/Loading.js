@@ -7,6 +7,7 @@ const useStyles = makeStyles({
     color: "white",
   },
 });
+//Loading Screen
 export default function Loading() {
   return (
     <Grid container justify="center">

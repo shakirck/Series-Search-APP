@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "../styles/Home.module.css";
 import { Grid, makeStyles } from "@material-ui/core";
 const useStyles = makeStyles({
   root: {
@@ -9,6 +8,7 @@ const useStyles = makeStyles({
     alignItems: "flex-start",
   },
 });
+//Whole  app default  layout
 export default function Layout({ children }) {
   const classes = useStyles();
   return (

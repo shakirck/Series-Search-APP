@@ -19,21 +19,25 @@ export default function SeriesList({
   page,
 }) {
   const classes = useStyles();
-  const seriesData = seriesReader();
-  const [selectedSeries, setselectedSeries] = useState();
-  const [showSelected, setshowSelected] = useState(false);
+  const seriesData = seriesReader(); // start fetching api  .. returns promise
+  const [selectedSeries, setselectedSeries] = useState(); // for storing the selected series for showing inmodal
+  const [showSelected, setshowSelected] = useState(false); // for checking wheather a modal is to be shown or not
 
+  //finding the total number of pages based on the result count
   let maxpage;
   if (seriesData && seriesData.totalResults) {
     maxpage = Math.ceil(seriesData.totalResults / 10);
   }
   //   console.log(maxpage, "maxpage");
+
+  //handling modal functionality
   const handleModal = (series) => {
     setshowSelected(!showSelected);
     setselectedSeries(series);
     // console.log(showSelected);
     // console.log(selectedSeries, "*****");
   };
+  //Handling pagination
   const handleNextPage = () => {
     if (page === maxpage) {
       return;

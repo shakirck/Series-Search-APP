@@ -15,11 +15,12 @@ const useStyles = makeStyles({
   },
 });
 function HomePage(props) {
-  const classes = useStyles();
-  const [searchState, setsearchState] = useState();
-  const [seriesReader, getNewSeries] = useAsyncResource(fetchSeries);
-  const [page, setPage] = useState(1);
+  const classes = useStyles(); // classes
+  const [searchState, setsearchState] = useState(); //storing search state
+  const [seriesReader, getNewSeries] = useAsyncResource(fetchSeries); // async resource
+  const [page, setPage] = useState(1); //page number state
 
+  //fetching api
   const selectSearchParamsHandle = useCallback((series, year, page) => {
     setPage(page);
     getNewSeries(series, year, page);
@@ -48,6 +49,7 @@ function HomePage(props) {
 
 export default HomePage;
 
+//api url
 const fetchSeries = (searchName, year, page) =>
   fetch(
     `https://www.omdbapi.com/?apikey=d1927cda&s=${searchName}&&type=series&page=${page}&y=${year}`
