@@ -6,7 +6,7 @@ const useStyles = makeStyles({
     backgroundColor: "#0f1828",
     height: "100vh",
     overflowX: "hidden",
-    alignItems: "flex-start",console.log
+    alignItems: "flex-start",
   },
 });
 export default function Layout({ children }) {
