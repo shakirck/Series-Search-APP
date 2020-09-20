@@ -50,5 +50,5 @@ export default HomePage;
 
 const fetchSeries = (searchName, year, page) =>
   fetch(
-    `http://www.omdbapi.com/?apikey=d1927cda&s=${searchName}&&type=series&page=${page}&y=${year}`
+    `https://www.omdbapi.com/?apikey=d1927cda&s=${searchName}&&type=series&page=${page}&y=${year}`
   ).then((res) => res.json());
