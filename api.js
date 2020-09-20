@@ -34,7 +34,7 @@ function wrapPromise(promise) {
 function fetchSeries() {
   console.log("fetching....");
   const url =
-    "http://www.omdbapi.com/?apikey=d1927cda&s=dark&&type=series&page=1&y=2014";
+    "https://www.omdbapi.com/?apikey=d1927cda&s=dark&&type=series&page=1&y=2014";
 
   return fetch(url).then((res) => res.json());
 }
