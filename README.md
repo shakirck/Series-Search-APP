@@ -1,6 +1,6 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-##  LIVE DEMO [https://omdb-series-search.herokuapp.com/](https://omdb-series-search.herokuapp.com/) DEPLOYED ON HEROKU
+##  LIVE DEMO [https://omdb-series-search.herokuapp.com/](https://omdb-series-search.herokuapp.com/) DEPLOYED ON HEROKU(Will take some time to load for the first time)
 ## Getting Started
 
 First, run the development server:
